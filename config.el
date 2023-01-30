@@ -50,6 +50,8 @@
 (when (modulep! :editor evil)
   (setq! evil-disable-insert-state-bindings t))
 
+(map! :i "C-x C-s" #'save-buffer)
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
