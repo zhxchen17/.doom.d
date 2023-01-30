@@ -47,10 +47,13 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
+;; Enable most of Emacs keybindings under insert mode.
 (when (modulep! :editor evil)
   (setq! evil-disable-insert-state-bindings t))
-
 (map! :i "C-x C-s" #'save-buffer)
+
+;; Do not continue comments in the new line.
+(setq +default-want-RET-continue-comments nil)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
