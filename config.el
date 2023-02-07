@@ -58,6 +58,9 @@
 ;; C/C++ default indentation level.
 (setq-default c-basic-offset 2)
 
+(add-hook 'cuda-mode-hook
+          (lambda () (setq-default c-basic-offset 2)))
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
