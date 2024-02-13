@@ -24,7 +24,7 @@
 ;; (setq doom-font (font-spec :family "Fira Code" :size 14 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "Fira Sans" :size 14))
 
-(setq doom-font (font-spec :family "Hack" :size 12.0 :weight 'semi-light))
+(setq doom-font (font-spec :family "Hack" :size 16.0))
 
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -60,6 +60,8 @@
 
 (add-hook 'cuda-mode-hook
           (lambda () (setq-default c-basic-offset 2)))
+
+(pixel-scroll-precision-mode)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.

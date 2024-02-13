@@ -194,4 +194,4 @@
        ;;literate
        (default +bindings +smartparens))
 
-(setq initial-frame-alist '((width . 100) (height . 70)))
+(setq initial-frame-alist '((width . 140) (height . 100)))
